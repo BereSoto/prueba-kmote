@@ -75,7 +75,7 @@
                 expedita minus. Non unde vero molestias.</p>
         </div>
     </div>
-    <the-btn />
+    <the-chat />
     <the-footer />
 </div>
 </template>
@@ -85,12 +85,12 @@ import axios from 'axios';
 import env from '../config/env';
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
-import TheBtn from '~/components/TheBtn.vue';
+import TheChat from '../components/TheChat.vue';
 export default Vue.extend({
     components: {
         TheFooter,
         TheHeader,
-        TheBtn,
+        TheChat,
         },
         data(){
         return{
