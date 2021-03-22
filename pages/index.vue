@@ -94,14 +94,8 @@ export default Vue.extend({
         },
         data(){
         return{
-            mensaje:'holas'
         }
     },
-    created(){
-        axios.get(`${env.endpoint}/albums`).then(response =>{
-            console.log(response);
-        })
-    }
 })
 </script>
 

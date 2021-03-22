@@ -48,6 +48,21 @@
 		</div>
 		<div class="content content-text" v-if="showCandidato">
 			<p>Excelente! tenemos a los candidatos perfectos para tu negocio.</p>
+			<div id="app">
+				<p>
+					<ul>
+						<li v-for="(item, index) in result.data">
+						<p>Nombre:	{{ item.nombre }} </p>
+						<p>Puesto: {{ item.puesto }} </p>
+						<p>Edad: {{ item.edad }} </p>
+						<p>Experiencia: {{ item.experiencia }} años </p>
+						<p>Preparatoria: {{ item.preparatoria }} </p>
+						<p>Id: {{ item.id }} años </p>
+						</li>
+					</ul>
+					{{ result.data }}
+				</p>
+			</div>
 		</div>
 			</div>
 			<footer class="card-footer">
@@ -69,10 +84,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import axios from 'axios'
 
 export default{
 	data: () => {
 		return {
+			result: null,
 			showText:false,
 			showPersonal:false,
 			showVacante:false,
@@ -81,7 +98,12 @@ export default{
 			showNivel:false,
 			showCandidato:false,
 		}
-	}
+	},
+		created() {
+    axios.get("https://kmote.mx/devtest/").then((result) => {
+      this.result = result.data;
+    })
+  }
 };
 </script>
 
