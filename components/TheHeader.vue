@@ -1,6 +1,6 @@
 <template>
 <header>
-    <nav class="navbar hola" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
       <img src="~/assets/icons/logo_2.svg">
@@ -15,7 +15,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item item_nav">
         Home
       </a>
 
@@ -32,7 +32,7 @@
      <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button btn">
             <strong>Sign up</strong>
           </a>
           <a class="button is-light">
@@ -55,6 +55,9 @@ export default Vue.extend({
 </script>
 
 <style>
-.hola{
+.btn{
+    background-color:#4FB1BD ;
+    color: white;
+    
 }
 </style>

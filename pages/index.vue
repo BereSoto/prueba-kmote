@@ -36,7 +36,7 @@
         </div>
         <div class="col-text has-text-centered">
                 <img src="~/assets/icons/13.svg" alt="logo_twitter">
-                <h3 class="has-text-centered is-size-4 mb-4">Fácil Registro</h3>
+                <h3 class="has-text-centered is-size-4 mb-4">Entrevistas en movimiento</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illo sed veniam fugit? 
                     Adipisci velit suscipi Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maiores illo sed veniam fugit? Adipisci velit suscipi</p>
@@ -48,7 +48,7 @@
         </div>
         <div class="col-text has-text-centered">
                 <img src="~/assets/icons/17.svg" alt="logo_twitter">
-                <h3 class="has-text-centered is-size-4 mb-4">Fácil Registro</h3>
+                <h3 class="has-text-centered is-size-4 mb-4">Un solo sitio, toda la industria</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illo sed veniam fugit? 
                     Adipisci velit suscipi Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maiores illo sed veniam fugit? Adipisci velit suscipi</p>
@@ -75,6 +75,7 @@
                 expedita minus. Non unde vero molestias.</p>
         </div>
     </div>
+    <the-btn />
     <the-footer />
 </div>
 </template>
@@ -84,10 +85,12 @@ import axios from 'axios';
 import env from '../config/env';
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
+import TheBtn from '~/components/TheBtn.vue';
 export default Vue.extend({
     components: {
         TheFooter,
         TheHeader,
+        TheBtn,
         },
         data(){
         return{
@@ -106,5 +109,6 @@ export default Vue.extend({
 .col-text{
     width: 80%;
 }
+
 
 </style>
