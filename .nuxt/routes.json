@@ -1,5 +1,12 @@
 [
   {
+    "name": "preguntas-id",
+    "path": "/preguntas/:id?",
+    "component": "/Users/montserratberenicesotofermin/Documents/kmote/template/pages/preguntas/_id.vue",
+    "chunkName": "pages/preguntas/_id",
+    "_name": "_70fbebed"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/montserratberenicesotofermin/Documents/kmote/template/pages/index.vue",
