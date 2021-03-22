@@ -7,7 +7,7 @@
         <h4 class="has-text-white ">Política de privacidad</h4>
       </div>
       <div class="column auto">
-          <h4 class="has-text-white">Lorem ipsum dolor</h4>
+          <h4 class="has-text-white">Contáctanos</h4>
           <div class="icon-text">
             <span class="icon has-text-info">
             <img src="~/assets/icons/facebook.svg" alt="logo_facebook">
